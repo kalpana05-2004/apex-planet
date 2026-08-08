@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+
+body{
+    background:#121212;
+    color:white;
+    min-height:100vh;
+}
+
+/* Header */
+
+.header{
+    background:#1c1c1c;
+    text-align:center;
+    padding:30px;
+    border-bottom:2px solid #2f80ed;
+}
+
+.header h1{
+    color:#4da6ff;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#000;
+    padding:18px 40px;
+}
+
+.logo{
+    color:#4da6ff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#4da6ff;
+}
+
+/* Main Container */
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* Cards */
+
+.card{
+    background:#1f1f1f;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#4da6ff;
+    margin-bottom:20px;
+}
+
+/* Labels */
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+/* Inputs */
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #444;
+    border-radius:6px;
+    background:#2b2b2b;
+    color:white;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#bdbdbd;
+}
+
+/* Buttons */
+
+button{
+    background:#2f80ed;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d5db8;
+}
+
+/* Validation Message */
+
+#error{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* To-Do */
+
+.todo{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.todo input{
+    flex:1;
+    margin:0;
+}
+
+#taskList{
+    list-style:none;
+}
+
+#taskList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2b2b2b;
+    color:white;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
+#taskList li button{
+    background:#e53935;
+    padding:8px 14px;
+}
+
+#taskList li button:hover{
+    background:#c62828;
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    border-top:2px solid #2f80ed;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:34px;
+    }
+
+    .todo{
+        flex-direction:column;
+    }
+
+    .todo button{
+        width:100%;
+    }
+}
