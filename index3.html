@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Styling and JavaScript</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>Web</span>Master
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#quiz">Quiz</a>
+                </li>
+
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#weather">Weather</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    TASK - 3
+                </p>
+
+                <h1>
+                    Advanced Styling
+                    <span>& JavaScript</span>
+                </h1>
+
+                <p class="hero-text">
+                    Build interactive, responsive and dynamic
+                    websites using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#quiz" class="btn">
+                        Start Quiz
+                    </a>
+
+                    <a href="#weather" class="btn secondary-btn">
+                        Check Weather
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📱
+                </div>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                    Website automatically adapts to
+                    mobile, tablet and desktop screens.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🧠
+                </div>
+
+                <h3>Interactive Quiz</h3>
+
+                <p>
+                    Test your JavaScript knowledge
+                    with an interactive quiz.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌐
+                </div>
+
+                <h3>API Integration</h3>
+
+                <p>
+                    Fetch live weather information
+                    from a public API.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUIZ ================= -->
+
+        <section id="quiz" class="section">
+
+            <div class="section-heading">
+
+                <span>JAVASCRIPT PROJECT</span>
+
+                <h2>🧠 Interactive Quiz</h2>
+
+                <p>
+                    Test your knowledge of HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="quiz-box">
+
+                <div class="quiz-top">
+
+                    <span id="questionNumber">
+                        Question 1 / 5
+                    </span>
+
+                    <span id="score">
+                        Score: 0
+                    </span>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div
+                        class="progress-bar"
+                        id="progressBar">
+                    </div>
+
+                </div>
+
+
+                <h3 id="question">
+                    Loading question...
+                </h3>
+
+
+                <div id="answers" class="answers">
+                </div>
+
+
+                <div class="quiz-actions">
+
+                    <button
+                        id="nextButton"
+                        class="btn">
+                        Next Question
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="quizResult"
+                    class="quiz-result">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IMAGE CAROUSEL ================= -->
+
+        <section id="gallery" class="section gallery-section">
+
+            <div class="section-heading">
+
+                <span>JAVASCRIPT CAROUSEL</span>
+
+                <h2>🖼️ Image Carousel</h2>
+
+                <p>
+                    Use the buttons or dots to change images.
+                </p>
+
+            </div>
+
+
+            <div class="carousel">
+
+                <img
+                    id="carouselImage"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                    alt="Programming workspace"
+                >
+
+
+                <button
+                    id="previousButton"
+                    class="carousel-button previous">
+                    ❮
+                </button>
+
+
+                <button
+                    id="nextImageButton"
+                    class="carousel-button next">
+                    ❯
+                </button>
+
+            </div>
+
+
+            <div
+                id="carouselDots"
+                class="carousel-dots">
+            </div>
+
+        </section>
+
+
+        <!-- ================= WEATHER API ================= -->
+
+        <section id="weather" class="section weather-section">
+
+            <div class="section-heading">
+
+                <span>PUBLIC API</span>
+
+                <h2>🌤️ Live Weather</h2>
+
+                <p>
+                    Fetch weather information using JavaScript
+                    and a public API.
+                </p>
+
+            </div>
+
+
+            <div class="weather-box">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="Enter city name"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="weatherButton"
+                        class="btn">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="weatherResult"
+                    class="weather-result">
+
+                    <div class="weather-placeholder">
+
+                        <div class="weather-icon">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Search for a city
+                        </h3>
+
+                        <p>
+                            Enter a city name to see
+                            current weather information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                <span>Web</span>Master
+            </h2>
+
+            <p>
+                Advanced Styling and JavaScript
+            </p>
+
+            <p class="copyright">
+                © 2026 Task-3 | All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
