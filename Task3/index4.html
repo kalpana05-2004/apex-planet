@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio - Task 4</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                MyPortfolio
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#todo">To-Do App</a>
+                </li>
+
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="welcome">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hello, I'm
+                    <span>Kalpana Devi Golla</span>
+                </h1>
+
+                <h2>
+                    B.Tech AI & ML Student
+                </h2>
+
+                <p>
+                    I am interested in Artificial Intelligence,
+                    Machine Learning, Web Development and
+                    Software Development.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects"
+                       class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact"
+                       class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-circle">
+                    👩‍💻
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Know more about me and my skills
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <h3>Who Am I?</h3>
+
+                    <p>
+                        I am a B.Tech student specializing in
+                        Computer Science and Artificial
+                        Intelligence & Machine Learning.
+                    </p>
+
+                    <p>
+                        I enjoy learning programming,
+                        web development, Data Structures,
+                        Artificial Intelligence and
+                        Machine Learning.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>My Skills</h3>
+
+                    <div class="skills">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Machine Learning</span>
+                        <span>Git & GitHub</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>My Projects</h2>
+
+                <p>
+                    My recent projects
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        💼
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+
+                        <p>
+                            Responsive portfolio website
+                            to showcase my skills,
+                            education and projects.
+                        </p>
+
+                        <span class="tag">
+                            HTML CSS JS
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        ✅
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            To-Do Application
+                        </h3>
+
+                        <p>
+                            Task management application
+                            with Local Storage support.
+                        </p>
+
+                        <span class="tag">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-icon">
+                        🛒
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Product Listing
+                        </h3>
+
+                        <p>
+                            Product listing page with
+                            search, filtering and sorting.
+                        </p>
+
+                        <span class="tag">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TODO APP ================= -->
+
+    <section id="todo">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>To-Do List</h2>
+
+                <p>
+                    Tasks are saved using Local Storage
+                </p>
+
+            </div>
+
+
+            <div class="todo-container">
+
+                <div class="todo-input">
+
+                    <input
+                        type="text"
+                        id="todoInput"
+                        placeholder="Enter your task..."
+                    >
+
+                    <button
+                        class="btn primary-btn"
+                        id="addTaskBtn">
+                        Add Task
+                    </button>
+
+                </div>
+
+
+                <ul id="todoList"></ul>
+
+
+                <button
+                    class="btn clear-btn"
+                    id="clearTasksBtn">
+                    Clear All
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Product Listing</h2>
+
+                <p>
+                    Search, filter and sort products
+                </p>
+
+            </div>
+
+
+            <div class="filter-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Electronics">
+                        Electronics
+                    </option>
+
+                    <option value="Clothing">
+                        Clothing
+                    </option>
+
+                    <option value="Books">
+                        Books
+                    </option>
+
+                    <option value="Accessories">
+                        Accessories
+                    </option>
+
+                </select>
+
+
+                <select id="priceFilter">
+
+                    <option value="all">
+                        All Prices
+                    </option>
+
+                    <option value="0-50">
+                        Under ₹50
+                    </option>
+
+                    <option value="50-100">
+                        ₹50 - ₹100
+                    </option>
+
+                    <option value="100-500">
+                        ₹100 - ₹500
+                    </option>
+
+                    <option value="500">
+                        Above ₹500
+                    </option>
+
+                </select>
+
+
+                <select id="sortFilter">
+
+                    <option value="default">
+                        Sort By
+                    </option>
+
+                    <option value="priceLow">
+                        Price: Low to High
+                    </option>
+
+                    <option value="priceHigh">
+                        Price: High to Low
+                    </option>
+
+                    <option value="ratingHigh">
+                        Rating: High to Low
+                    </option>
+
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="productGrid">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Contact Me</h2>
+
+                <p>
+                    Send me a message
+                </p>
+
+            </div>
+
+
+            <div class="contact-container">
+
+                <form id="contactForm">
+
+                    <div class="form-group">
+
+                        <label>Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Message</label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Write your message..."
+                            required>
+                        </textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 My Portfolio
+        </p>
+
+        <p>
+            HTML • CSS • JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script3.js"></script>
+
+</body>
+
+</html>
